@@ -6,8 +6,10 @@ test('test', async ({ page }) => {
  //first screenshot by locator 
  await page.locator('#page-header-container').screenshot({path:'./screenshot/header.png'});
 
+ //current page screenshot
  await page.screenshot({path:'./screenshot/current_page.png'});
 
+ //full page screenshot
  await page.screenshot({path:'./screenshot/full_page.png',fullPage:true });
 
 
