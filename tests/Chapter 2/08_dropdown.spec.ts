@@ -1,9 +1,7 @@
-
-
 import{test,expect} from '@playwright/test';
-
-test('dropdown', async ({ page }) => {
 /*
+test('dropdown', async ({ page }) => {
+
   await page.goto('https://www.facebook.com/');
   await page.getByLabel("Create new account").click();
 
@@ -12,9 +10,9 @@ test('dropdown', async ({ page }) => {
 await page.getByRole('combobox', { name: 'Month' }).click();
 // 2. Click the option
 await page.getByRole('option', { name: 'May' }).click();
+})
 */
 
-})
 
 test('dropdown2', async ({ page }) => {
 
