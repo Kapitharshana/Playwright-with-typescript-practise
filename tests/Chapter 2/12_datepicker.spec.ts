@@ -17,7 +17,7 @@ test('date picker', async ({ page }) => {
 
    //await iframepage.locator('text="15"').click();
 
-   //now sekect the previous month and select date
+   //now select the previous month and select date
     await iframepage.locator('[title="Prev"]').click();
     await iframepage.locator('text="15"').click();
  
