@@ -25,5 +25,6 @@ await expect(page.locator('//span[@id="title"]')).toHaveText('People also watche
 await expect(page.locator('//span[@id="title"]')).toHaveCount(1);
 //await expect(page.locator('(//span[@id="title"])[1]')).toBeDisabled(); -> currently can't use this disabled mathoed for span , text but can use for button ,input, slect , textarea
 
+await expect(page).toHaveTitle('playwright by testers talk - YouTube');
 
 })   
