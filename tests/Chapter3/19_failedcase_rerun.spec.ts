@@ -13,5 +13,9 @@ test('repeated test', async ({ page }) => {
 
 });
 
-// for repeatedly run the testcase run the command in ternminal 
-//npx playwright test tests/Chapter3/18_repeatedrun.spec.ts --repeat-each=3
+/*
+ for run the failed testcase again automatically - >
+ go to playwright.config.js - > in that change the number of retry as 1,2 ..
+"" retries: process.env.CI ? 2 : 1, "" //this is for run the test again 1 time again after the testcase failed.
+
+*/
