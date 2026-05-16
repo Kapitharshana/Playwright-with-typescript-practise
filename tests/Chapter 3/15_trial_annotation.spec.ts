@@ -37,5 +37,4 @@ await expect(page.getByRole('link', { name: '#1 Playwright Tutorial Full' })).to
 await expect(page.getByRole('link', { name: '#2 Playwright API Testing' })).toBeVisible();
 
 })
-
 */

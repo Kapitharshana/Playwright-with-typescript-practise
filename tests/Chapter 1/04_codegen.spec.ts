@@ -9,6 +9,6 @@ test('test', async ({ page }) => {
 });
 
 
-/*This code was taken by typing the code through termminal which is 
+/*This code was taken by typing the code through terminal which is 
 npx playwright codegen 
 */

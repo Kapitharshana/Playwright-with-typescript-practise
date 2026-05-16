@@ -17,4 +17,5 @@ test.only('test 03', async ({ page }) => {
   await page.goto('https://www.google.com');
   await page.fill('textarea[name="q"]', 'Playwright');
   await expect(page.locator('textarea[name="q"]')).toHaveValue('Playwright');
+  
 });
