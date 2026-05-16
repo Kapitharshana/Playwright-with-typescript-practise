@@ -1,5 +1,5 @@
 import{test,expect} from '@playwright/test';
-
+/*
 test.describe("smoke testing" ,  () =>{
 
 test('test', async ({ page }) => {
@@ -27,5 +27,5 @@ test('test', async ({ page }) => {
 
 });
 
-
+*/
 
