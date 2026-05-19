@@ -5,7 +5,7 @@ const keywords= ['playwright by testers talk', 'Cypress by Testers Talk', 'API T
 for (const keyword of keywords) {
 
 test(`parameter test ${keyword}`, async ({ page }) => {
-   test.setTimeout(120000);
+   test.setTimeout(180000);
   await page.goto('https://www.youtube.com/');
   await page.getByRole('combobox', { name: 'Search' }).click();
   await page.getByRole('combobox', { name: 'Search' }).fill(keyword);
@@ -14,7 +14,8 @@ test(`parameter test ${keyword}`, async ({ page }) => {
    //await page.waitForLoadState('networkidle');
   //await expect(page.locator("span:has-text('Playwright by Testers Talk')")).toBeVisible();
   await expect(page.getByText(keyword)).toBeVisible();
-
+await page.waitForTimeout(60000);
 });
+
 }
 
