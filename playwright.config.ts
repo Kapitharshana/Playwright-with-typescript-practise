@@ -16,7 +16,11 @@ export default defineConfig({
   testDir: './tests',
 
   //global test timeout 
-timeout:3*60*1000,
+timeout:1*60*1000,
+/*
+expect: {
+  timeout:10000
+},*/
 
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -38,6 +42,9 @@ timeout:3*60*1000,
     headless:false,
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+
+    //actiontimepot also will considered inside the gloabal timeout.
+    actionTimeout: 5000, // 5 seconds for each action (like click, fill, etc.)
   },
 
   /* Configure projects for major browsers */
