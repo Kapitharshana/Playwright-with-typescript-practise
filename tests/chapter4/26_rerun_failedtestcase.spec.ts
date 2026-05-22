@@ -22,7 +22,8 @@ test('test3', async ({ page }) => {
 });
 
 /* intentionally failing the testcase to check the rerun failed testcases  
- //for that running the code in terminal which is : npx playwright test --last-failed
+ //for that running the code in terminal which is : npx playwright test 'testacse name ' --last-failed   
+ //should enter the testcase name also , then only the testcase will work otherwise no
 test('test2', async ({ page }) => {
    expect(true).toBe(false);
 
