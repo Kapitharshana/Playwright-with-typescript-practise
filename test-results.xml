@@ -1,0 +1,48 @@
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="79.678948">
+<testsuite name="chapter4\28_check_diffTestReport.spec.ts" timestamp="2026-05-22T08:19:21.141Z" hostname="Google Chrome" tests="3" failures="1" skipped="0" time="197.242" errors="0">
+<testcase name="smoke testing › test1" classname="chapter4\28_check_diffTestReport.spec.ts" time="76.94">
+</testcase>
+<testcase name="regression testing › test2" classname="chapter4\28_check_diffTestReport.spec.ts" time="58.871">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\chapter4-28_check_diffTestReport-regression-testing-test2-Google-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\chapter4-28_check_diffTestReport-regression-testing-test2-Google-Chrome\error-context.md]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [Google Chrome] › chapter4\28_check_diffTestReport.spec.ts:18:5 › regression testing › test2 ─────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('link', { name: 'Learn Playwright with' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('link', { name: 'Learn Playwright with' })
+
+
+      22 |   await page.getByRole('combobox', { name: 'Search' }).fill('learn playwright with typescript');
+      23 |   await page.getByRole('combobox', { name: 'Search' }).press('Enter');
+    > 24 |   await expect(page.getByRole('link', { name: 'Learn Playwright with' })).toBeVisible();
+         |                                                                           ^
+      25 |   
+      26 | });
+      27 |
+        at F:\Automation testing\Playwright\PWDEMO\tests\chapter4\28_check_diffTestReport.spec.ts:24:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\chapter4-28_check_diffTestReport-regression-testing-test2-Google-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\chapter4-28_check_diffTestReport-regression-testing-test2-Google-Chrome\error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="regression testing › test3" classname="chapter4\28_check_diffTestReport.spec.ts" time="61.431">
+</testcase>
+</testsuite>
+</testsuites>

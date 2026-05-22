@@ -7,7 +7,7 @@ await page.goto('https://www.selenium.dev/documentation/webdriver/interactions/a
 
 //dialog event is used to handle the popups in playwright
 page.once('dialog', async dialog => {
-
+console.log('popup type is : ' + dialog.type());
     dialog.accept(); //to click on ok button of the popup
     console.log('alert message is : ' + dialog.message());
 
@@ -25,6 +25,7 @@ await page.goto('https://www.selenium.dev/documentation/webdriver/interactions/a
 //dialog event is used to handle the popups in playwright
 page.once('dialog', async dialog => {
 
+console.log('popup type is : ' + dialog.type());
     dialog.dismiss(); //to click on cancel button of the popup
     console.log('alert message is : ' + dialog.message());
 
@@ -42,6 +43,7 @@ await page.goto('https://www.selenium.dev/documentation/webdriver/interactions/a
 //dialog event is used to handle the popups in playwright
 page.once('dialog', async dialog => {
 
+    console.log('popup type is : ' + dialog.type());
     dialog.accept('hello'); 
     console.log('alert message is : ' + dialog.message());
 
