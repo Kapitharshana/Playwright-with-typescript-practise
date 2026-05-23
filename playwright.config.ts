@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
+import { on } from 'cluster';
 // (removed incorrect import for json reporter)
 
 /**
@@ -35,9 +36,9 @@ expect: {
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['html'],
-    ['json', { outputFile: 'test-results.json' }],
-    ['list'],
-    ['junit', { outputFile: 'test-results.xml' }],
+   // ['json', { outputFile: 'test-results.json' }],
+   // ['list'],
+    //['junit', { outputFile: 'test-results.xml' }],
   ],
 
 
@@ -48,6 +49,9 @@ expect: {
     // baseURL: 'http://localhost:3000',
     
     testIdAttribute: 'data-tab-item', 
+    //video:'on',
+    //screenshot:'on',
+
     screenshot:'only-on-failure',
     headless:false,
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
