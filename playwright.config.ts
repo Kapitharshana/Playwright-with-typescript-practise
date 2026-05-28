@@ -39,6 +39,7 @@ expect: {
    // ['json', { outputFile: 'test-results.json' }],
    // ['list'],
     //['junit', { outputFile: 'test-results.xml' }],
+    ['allure-playwright'],
   ],
 
 

@@ -16,7 +16,7 @@ test('test1', async ({ page }) => {
 test.describe("regression testing" , () =>{
 
 test('test2', async ({ page }) => {
-  test.setTimeout(60000);
+  test.setTimeout(1200000);
   await page.goto('https://www.youtube.com/');
   await page.getByRole('combobox', { name: 'Search' }).click();
   await page.getByRole('combobox', { name: 'Search' }).fill('learn playwright with typescript');
@@ -31,7 +31,7 @@ test('test3', async ({ page }) => {
   await page.getByRole('combobox', { name: 'Search' }).click();
   await page.getByRole('combobox', { name: 'Search' }).fill('learn playwright with typescript');
   await page.getByRole('combobox', { name: 'Search' }).press('Enter');
-  await expect(page.getByRole('link', { name: 'Learn Playwright with' })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Learnhello Playwright with' })).toBeVisible();
   
 });
 
