@@ -10,6 +10,6 @@ test('testcontent ', async ({ page }) => {
   console.log('full name is : ' + fullname);
   expect(fullname).toBe('Kapitharshana');
 
-  const attribute= await page.getByTestId('repositories').first().getAttribute('data-selected-links');
+  const attribute = await page.getByTestId('repositories').first().getAttribute('data-selected-links');
   console.log('attribute value is : ' + attribute);
 });

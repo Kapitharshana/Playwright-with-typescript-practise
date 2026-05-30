@@ -1,0 +1,3 @@
+text from loop : _apiName
+text from loop : _frame
+text from loop : _selector
